@@ -1,0 +1,100 @@
+.signupbtn, .loginbtn, .create, .all-recipes, .profile, .aboutUs{
+    text-decoration: none;
+}
+
+.navbar-top{
+    display: flex;
+    height: 14vh;
+    background-color: black;
+    width: 100vw;
+    position: relative;
+    padding: 3px;
+    /* right: 0.4%; */
+    /* bottom: 1vh; */
+}
+
+.signUp, .loggedIn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 64vw;
+    height: 11vh;
+    justify-content: space-between;
+}
+
+.signup-div, .login-div, .demoLogin, .all-recipes, .profile, .logoutbtn, .create, .aboutUs{
+    background-color: black;
+    position: relative;
+    border: 1px solid gray;
+    width:8vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1vh;
+    text-decoration: none;
+}
+
+#global-link{
+    font-size: 4vw;
+    position: relative;
+    /* top: 20%;
+    left: 5%; */
+    left: 1.5vw;
+}
+
+.loginbtn, .demoLogin, .logoutbtn{
+    cursor: pointer;
+}
+
+.homelink-global{
+    color: gray;
+    font-size: 2vw;
+    position: relative;
+    left: 7.5vw;
+    bottom: 8vw;
+}
+
+.signup-div{
+    background-color: black;
+}
+.p-signup, .p-login, .linktorecipes, .demoLogin, .logout-p, .all-recipes, .profile, .create, .aboutUs{
+    color: whitesmoke;
+    font-size: 1vw;
+}
+
+.icon-app-name{
+    width: 25vw;
+    height: 10vh;
+    position: relative;
+    top: 10%;
+}
+
+.text-global{
+    color: whitesmoke;
+    position: relative;
+    top: 5vw;
+    right: 1.3vw;
+    width: 17vw;
+}
+
+#global-link{
+    position: relative;
+    top: 7%;
+    color: pink;
+
+}
+
+/* .demoLogin{
+    color: gray;
+    position: relative;
+} */
+
+.linktorecipes{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.link-global-nav{
+    text-decoration: none;
+}

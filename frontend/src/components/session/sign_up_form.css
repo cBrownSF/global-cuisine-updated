@@ -1,0 +1,55 @@
+.login-container{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+   /* right:0;
+   left:60;
+   bottom: 0;
+   top: 20; */
+   /* background-color: blanchedalmond; */
+}
+
+.login-container #form-boxes{
+  
+  font-family: inherit;
+  color:black;
+  margin: 5px;
+  padding: 8px;
+  /* margin-top:20px; */
+  
+   border-color:black;
+   border-width:.1px;
+   width: 200px;
+   height:35px;
+   line-height: 1.5;
+  font-size: 18px
+}
+.submit-button{
+   font-family: inherit;
+   background-color:lightgrey;
+   color:whitesmoke;
+   text-align: center;
+   border-radius: 3px;
+   outline:none;
+   border: .1px;
+   font-size: 16px;
+   width: 220px;
+   height:50px;
+   margin-top:5x;
+   margin-right:5px;
+   margin-left:4px;
+
+   cursor:pointer;
+}
+.error-list{
+  list-style: inside;
+  list-style-position: outside;
+  padding-left:17px
+}
+.errors{
+  line-height:1.6vh;
+  font-size:14px;
+  color:whitesmoke;
+}
