@@ -14,9 +14,10 @@ import ReviewIndexContainer from './review/review_index_container';
 import AboutUs from './about_us.js/about_us';
 const App = () => (
   <div>
+    <header>
     <NavBarContainer />
+    </header>
     <Switch>
-      <Route exact path="/" component={HomePage} />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <ProtectedRoute path="/profile" component={ProfileContainer} />
@@ -33,8 +34,9 @@ const App = () => (
       />
       <Route path="/about" component={AboutUs} />
       {/* <AuthRoute exact path="/" component={HomePage} /> */}
-      <Route render={() => <Redirect to={{ pathname: "/" }} />} />
+      {/* <Route render={() => <Redirect to={{ pathname: "/" }} />} /> */}
       {/* <Redirect to="/" /> */}
+      <Route exact path="/" component={HomePage} />
     </Switch>
   </div>
 );
