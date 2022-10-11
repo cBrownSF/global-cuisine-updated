@@ -6,6 +6,30 @@
 .links-nav{
   display:flex;
   align-items: center;
-  margin-right:0;
+  margin-right:3em;
   justify-content: space-evenly;
+  list-style: none;
+}
+.links-nav li {
+  margin-right:0;
+  margin-left: 1em;
+}
+.demo-login{
+  cursor:pointer;
+}
+.logout-btn{
+  cursor: pointer;
+}
+.link-on-nav{
+    text-decoration: none;
+      color: black;
+}
+.icon-and-title{
+  margin:0 3em 0 2em;
+  display: flex;
+  align-items: center;
+}
+#globe-icon{
+  margin-right:1em;
+  font-size:3em;
 }

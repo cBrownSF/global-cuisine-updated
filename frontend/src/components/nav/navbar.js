@@ -26,47 +26,35 @@ class NavBar extends React.Component {
   getLinks() {
     if (this.props.loggedIn) {
       return (
-        <div className="links-nav">
-          <Link to={"/recipes"} className="all-recipes">
-            All Recipes
-          </Link>
-          <Link to={"/profile"} className="profile">
-            Profile
-          </Link>
-          <Link to={"/recipes/new"} className="create">
-            Create Recipe
-          </Link>
-          <div onClick={this.logoutUser} className="logoutbtn">
-            <p className="logout-p">Logout</p>
-          </div>
-          <Link to="/about" className="aboutUs">
-            About Us
-          </Link>
-        </div>
+        <ul className="links-nav">
+          <li><Link to={"/recipes"} className="link-on-nav">All Recipes</Link></li>
+          <li><Link to={"/profile"} className="link-on-nav">Profile</Link></li>
+          <li><Link to={"/recipes/new"} className="link-on-nav">Create Recipe</Link></li>
+          <li><button onClick={this.logoutUser} className="logout-btn">Logout</button></li>
+          <li><Link to="/about" className="link-on-nav">About Us</Link></li>
+        </ul>
       );
     } else {
       return (
-        <div className="links-nav">
-            <Link to={"/signup"} className="signup-div">Signup</Link>
-            <Link to={"/login"} className="login-div">Login</Link>
-          <div onClick={this.demoLogin} className="demoLogin">
-            <p>Demo Login</p>
-          </div>
-            <Link to="/recipes" className="all-recipes">All Recipes</Link>
-            <Link to="/about" className="aboutUs">About Us</Link>
-        </div>
+        <ul className="links-nav">
+          <li><Link to={"/signup"} className="link-on-nav">Signup</Link></li>
+          <li><Link to={"/login"} className="link-on-nav">Login</Link></li>
+          <li><button onClick={this.demoLogin} className="link-on-nav">Demo Login</button></li>
+          <li><Link to="/recipes" className="link-on-nav">All Recipes</Link></li>
+          <li><Link to="/about" className="link-on-nav">About Us</Link></li>
+        </ul>
       );
     }
   }
   render() {
     return (
-      <div className="navbar-top">
-        <div className="icon-app-name">
-          <Link to="/">
-            <i className="fas fa-globe-americas" id="global-link"></i>
+      <nav className="navbar-top">
+        <div className="icon-and-title">
+          <Link to="/" className = "link-on-nav">
+            <i className="fas fa-globe-americas" id="globe-icon"></i>
           </Link>
           <div className="homelink-global">
-            <Link to="/" className="link-global-nav">
+            <Link to="/" className="link-on-nav">
               <p className="text-global">Global Cuisine</p>
             </Link>
           </div>
@@ -74,7 +62,7 @@ class NavBar extends React.Component {
           <SearchContainer />
         <div>{this.getLinks()}</div>
         
-      </div>
+      </nav>
     );
   }
 }
