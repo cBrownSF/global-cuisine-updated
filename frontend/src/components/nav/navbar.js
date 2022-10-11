@@ -26,7 +26,7 @@ class NavBar extends React.Component {
   getLinks() {
     if (this.props.loggedIn) {
       return (
-        <div className="loggedIn">
+        <div className="links-nav">
           <Link to={"/recipes"} className="all-recipes">
             All Recipes
           </Link>
@@ -46,13 +46,9 @@ class NavBar extends React.Component {
       );
     } else {
       return (
-        <div className="signUp">
-            <Link to={"/signup"} className="signup-div">
-              <p className="p-signup">Signup</p>
-            </Link>
-            <Link to={"/login"} className="login-div">
-              <p className="p-login">Login</p>
-            </Link>
+        <div className="links-nav">
+            <Link to={"/signup"} className="signup-div">Signup</Link>
+            <Link to={"/login"} className="login-div">Login</Link>
           <div onClick={this.demoLogin} className="demoLogin">
             <p>Demo Login</p>
           </div>
@@ -75,8 +71,9 @@ class NavBar extends React.Component {
             </Link>
           </div>
         </div>
+          <SearchContainer />
         <div>{this.getLinks()}</div>
-        <SearchContainer />
+        
       </div>
     );
   }

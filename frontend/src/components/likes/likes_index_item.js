@@ -24,3 +24,4 @@ const LikeIndexItem = ({ like, updateLike,listingId, currentUser, deleteLike }) 
   );
 };
 export default LikeIndexItem;
+

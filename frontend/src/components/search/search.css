@@ -1,0 +1,7 @@
+.searchInputs{
+  display:flex;
+  align-items: center;;
+}
+.searchInputs input {
+  margin-right: 1em;
+}
