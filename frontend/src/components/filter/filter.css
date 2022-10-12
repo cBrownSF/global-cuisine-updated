@@ -17,3 +17,11 @@
   justify-content: center;
   align-items: center;;
 }
+.filter-recipes {
+  display:flex;
+  justify-content: space-around;
+}
+
+.images-filter{
+  width:30%;
+}

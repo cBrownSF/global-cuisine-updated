@@ -64,7 +64,7 @@ export default class Filter extends React.Component {
         </div>
         <div className="filter-recipes">
           {this.state.listingsCopy.map((listing) => (
-            <FilterList listing={listing} key={listing._id + 12} />
+            <FilterList listing={listing} key={listing._id} />
           ))}
         </div>
       </div>
