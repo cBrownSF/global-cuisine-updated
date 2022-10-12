@@ -12,6 +12,7 @@
   align-items: center;
   box-shadow: 0 1px 5px 0 rgb(0 0 0 / 8%);
   max-width:25em;
+  min-height: 30em;
 }
 .login-container input {
   width: 100%;
@@ -24,7 +25,12 @@
   border: solid 1px #404040;
   border-radius: 4px;
 }
-.login-container
+.login-container{
+  max-height:100vh;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* errors */
 .errors {
   color: red;
