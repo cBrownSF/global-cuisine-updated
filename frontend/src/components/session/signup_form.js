@@ -51,40 +51,43 @@ class SignupForm extends React.Component {
   render() {
     return (
       <div className="login-container">
-        <form onSubmit={this.handleSubmit}>
-          <div className="session-form">
-            <br />
-            <input id="form-boxes"
-            type="text"
+        <form onSubmit={this.handleSubmit} className="session-form">
+          <h1>Sign Up</h1>
+          <label htmlFor="email"></label>
+            <input type="text"
+              id="email"
+              aria-label= "email"
               value={this.state.email}
               onChange={this.handleInput('email')}
               placeholder="Email"
             />
-            <br />
-            <input id="form-boxes"
-              type="text"
+            <label htmlFor="username"></label>
+            <input type="text"
+              id="username"
+              aria-label = "username"
               value={this.state.username}
               onChange={this.handleInput('username')}
               placeholder="Username"
             />
-            <br />
-            <input id="form-boxes"
-              type="password"
+            <label htmlFor="password-one"></label>
+            <input type="password"
+              id="password-one"
+              aria-label="password-one"
               value={this.state.password}
               onChange={this.handleInput('password')}
               placeholder="Password"
             />
-            <br />
-            <input id="form-boxes"
-              type="password"
+            <label htmlFor="password-2"></label>
+            <input type="password"
+              id="password-2"
+              aria-lable ="password-2"
               value={this.state.password2}
               onChange={this.handleInput('password2')}
               placeholder="Confirm Password"
             />
-            <br />
             <input className='submit-button' type="submit" value="Submit" />
             {this.renderErrors()}
-          </div>
+     
         </form>
       </div>
     );
