@@ -11,3 +11,9 @@
 .home-page-btns button:first-child {
   margin-left:0;
 }
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;;
+}
