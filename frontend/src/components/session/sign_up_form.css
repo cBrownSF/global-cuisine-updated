@@ -1,15 +1,19 @@
- h1 {
+ .login-container h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1em;
+  font-size:1.8rem;
  }
-form {
-  width: 80%;
-  margin: 0 auto;
+.login-container form {
+  width: 100%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 1px 5px 0 rgb(0 0 0 / 8%);
-  max-width:80%;
+  max-width:25em;
 }
-input {
+.login-container input {
   width: 100%;
   max-width: 250px;
   font-family: inherit;
@@ -20,6 +24,7 @@ input {
   border: solid 1px #404040;
   border-radius: 4px;
 }
+.login-container
 /* errors */
 .errors {
   color: red;
