@@ -57,6 +57,7 @@ class SignupForm extends React.Component {
             <input type="text"
               id="email"
               aria-label= "email"
+              className='form-fields'
               value={this.state.email}
               onChange={this.handleInput('email')}
               placeholder="Email"
@@ -65,6 +66,7 @@ class SignupForm extends React.Component {
             <input type="text"
               id="username"
               aria-label = "username"
+              className='form-fields'
               value={this.state.username}
               onChange={this.handleInput('username')}
               placeholder="Username"
@@ -73,6 +75,7 @@ class SignupForm extends React.Component {
             <input type="password"
               id="password-one"
               aria-label="password-one"
+              className='form-fields'
               value={this.state.password}
               onChange={this.handleInput('password')}
               placeholder="Password"
@@ -80,12 +83,13 @@ class SignupForm extends React.Component {
             <label htmlFor="password-2"></label>
             <input type="password"
               id="password-2"
+              className='form-fields'
               aria-lable ="password-2"
               value={this.state.password2}
               onChange={this.handleInput('password2')}
               placeholder="Confirm Password"
             />
-            <input className='submit-button' type="submit" value="Submit" />
+            <input className='sign-up-submit-button' type="submit" value="Submit" />
             {this.renderErrors()}
      
         </form>

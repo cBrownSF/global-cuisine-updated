@@ -1,3 +1,10 @@
+ .login-container {
+   max-height: 100vh;
+   width: 80%;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 2em;
+ }
  .login-container h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -14,7 +21,7 @@
   max-width:25em;
   min-height: 30em;
 }
-.login-container input {
+.form-fields{
   width: 100%;
   max-width: 250px;
   font-family: inherit;
@@ -25,15 +32,35 @@
   border: solid 1px #404040;
   border-radius: 4px;
 }
-.login-container{
-  max-height:100vh;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+.sign-up-submit-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: .9em 1.5em;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+    appearance: none;
+    background-image: linear-gradient(to right, #28313B,
+        #485461);
+    color: whitesmoke;
+    max-width: 250px;
+    border: none;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 300ms;
+    transform: scale(1);
+    }
+  
+.sign-up-submit-button:hover {
+    transform: scale(1.05);
 }
+
 /* errors */
+.error-list{
+  list-style: none;
+}
 .errors {
   color: red;
-  margin-top: 1.4em;
-  margin-bottom: 0;
+  margin-bottom: .8em;
 }
