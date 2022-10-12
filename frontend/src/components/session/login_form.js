@@ -55,14 +55,15 @@ class LoginForm extends React.Component {
           <div className='session-form'>
             <input type="text"
               id="login-email"
-              type="text"
+              aria-label="login-email"
               value={this.state.email}
               onChange={this.handleInput('email')}
               placeholder="Email"
             />
             <label htmlFor="login-password"></label>
             <input 
-              id="login-pas"
+              id="login-password"
+              aria-label='login-password'
               type="password"
               value={this.state.password}
               onChange={this.handleInput('password')}

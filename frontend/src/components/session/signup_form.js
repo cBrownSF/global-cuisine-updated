@@ -53,38 +53,38 @@ class SignupForm extends React.Component {
       <div className="login-container">
         <form onSubmit={this.handleSubmit} className="session-form">
           <h1>Sign Up</h1>
-          <label htmlFor="email"></label>
+          <label htmlFor="sign-up-email"></label>
             <input type="text"
               id="email"
-              aria-label= "email"
+              aria-label= "sign-up-email"
               className='form-fields'
               value={this.state.email}
               onChange={this.handleInput('email')}
               placeholder="Email"
             />
-            <label htmlFor="username"></label>
+            <label htmlFor="sign-up-username"></label>
             <input type="text"
-              id="username"
-              aria-label = "username"
+              id="sign-up-username"
+              aria-label = "sign-up-username"
               className='form-fields'
               value={this.state.username}
               onChange={this.handleInput('username')}
               placeholder="Username"
             />
-            <label htmlFor="password-one"></label>
+            <label htmlFor="sign-up-password-one"></label>
             <input type="password"
-              id="password-one"
-              aria-label="password-one"
+              id="sign-up-password-one"
+              aria-label="sign-up-password-one"
               className='form-fields'
               value={this.state.password}
               onChange={this.handleInput('password')}
               placeholder="Password"
             />
-            <label htmlFor="password-2"></label>
+            <label htmlFor="sign-up-password-2"></label>
             <input type="password"
-              id="password-2"
+              id="sign-up-password-2"
+              aria-label ="sign-up-password-2"
               className='form-fields'
-              aria-lable ="password-2"
               value={this.state.password2}
               onChange={this.handleInput('password2')}
               placeholder="Confirm Password"
