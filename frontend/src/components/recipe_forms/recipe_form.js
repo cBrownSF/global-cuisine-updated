@@ -103,7 +103,6 @@ class RecipeForm extends React.Component {
         >
           <h1 className="heading-recipe-Text">Create Your Own Recipe</h1>
           <div className="center-recipe">
-            <div className="left-right-form">
               <div className="left-form">
                 <div className="name-create">
                   <label>Name
@@ -139,11 +138,10 @@ class RecipeForm extends React.Component {
                       className="rec-form-input"
                     />
                     </label>
-                </div>
-                <div className="country-create">
+                    <div className="country-create">
                     <label>Country
                     <select
-                      className="country-input"
+                      className="select-input"
                       value={this.state.country}
                       onChange={this.handleInput("country")}
                     >
@@ -164,7 +162,7 @@ class RecipeForm extends React.Component {
                 <div className="difficulty-create">
                     <label>Difficulty
                     <select
-                      className="difficulty-input"
+                      className="select-input"
                       value={this.state.difficulty}
                       onChange={this.handleInput("difficulty")}
                     >
@@ -175,38 +173,14 @@ class RecipeForm extends React.Component {
                     </select>
                     </label>
                 </div>
-                <div className="form-photo">
-                  {this.state.photoUrl ? (
-                    <img
-                      className="upload-photo-create"
-                      src={this.state.photoUrl}
-                    />
-                  ) : null}
-
-                  <div className="picture-create">
-                    <div className="picture-text">
-                      {this.state.photoFile?'':'Upload Picture'}</div>
-                    <div>
-                      <input
-                        type="file"
-                        name="picture"
-                        onChange={this.handleFile}
-                        className="uploadpic-create"
-                      />
-                    </div>
-                    <div className="recommended-photo">
-                      Recommended image size 640 X 400
-                    </div>
-                  </div>
                 </div>
-              </div>
               <div className="right-form">
                 <div className="description-create">
                     <label>Description
                     <textarea
                       value={this.state.details}
                       onChange={this.handleMaxInput("details", 361)}
-                      className="description-input"
+                      className="longer-inputs"
                     />
                     </label>
                     <p className="letter-count-details">
@@ -218,7 +192,7 @@ class RecipeForm extends React.Component {
                     <textarea
                       value={this.state.ingredients}
                       onChange={this.handleInput("ingredients")}
-                      className="ingredients-input"
+                      className="longer-inputs"
                     />
                     </label>
                     <p className="letter-count">
@@ -230,11 +204,33 @@ class RecipeForm extends React.Component {
                     <textarea
                       value={this.state.instruction}
                       onChange={this.handleMaxInput("instruction", 2001)}
-                      className="instruction-input"
+                      className="longer-inputs"
                     />
                     </label>
                     <p className="letter-count">{this.letterCount(this.state.instruction, 2000)}</p>
                 </div>
+                <div className="form-photo">
+                  <div className="picture-create">
+                    <p className="picture-text">
+                      {this.state.photoFile?'':'Upload Picture'}
+                    </p>
+                      <input
+                        type="file"
+                        name="picture"
+                        onChange={this.handleFile}
+                        className="uploadpic-create"
+                      />
+                    <p className="recommended-photo">
+                      Recommended image size 640 X 400
+                    </p>
+                  </div>
+                  {this.state.photoUrl ? (
+                    <img
+                      className="upload-photo-create"
+                      src={this.state.photoUrl}
+                    />
+                  ) : null}
+              </div>
               </div>
             </div>
             <div className="submit-recipe-create">

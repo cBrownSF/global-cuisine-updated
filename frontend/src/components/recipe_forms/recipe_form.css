@@ -1,4 +1,4 @@
-.rec-form-input {
+.rec-form-input,.longer-inputs,.select-input {
   display:block;
   margin-top:1em;
 }
