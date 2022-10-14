@@ -49,13 +49,13 @@ class RecipeForm extends React.Component {
   }
 
   handleMaxInput(field,maxCharacter) {
-    return (e) =>{
-    if (e.currentTarget.value.length < maxCharacter){
-      this.setState({
-        [field]: e.currentTarget.value,
-      });
+    return (e) => {
+      if (e.currentTarget.value.length < maxCharacter){
+        this.setState({
+          [field]: e.currentTarget.value,
+        });
+      }
     }
-  }
   }
   servingInput(type) {
     const regex = /^[0-9\b]+$/;
@@ -101,52 +101,48 @@ class RecipeForm extends React.Component {
           className="create-form"
           encType="multipart/form-data"
         >
-          <div className="create-text-recipe">Create Your Own Recipe</div>
+          <h1 className="heading-recipe-Text">Create Your Own Recipe</h1>
           <div className="center-recipe">
             <div className="left-right-form">
               <div className="left-form">
                 <div className="name-create">
-                  <div className="name-text">Name</div>
-                  <div>
+                  <label>Name
                     <input
                       type="text"
                       value={this.state.name}
                       onChange={this.handleMaxInput("name", 21)}
                       className="name-input"
                     />
+                    </label>
                     <p className="letter-count">
                       {this.letterCount(this.state.name, 20)}
                     </p>
-                  </div>
                 </div>
                 <div className="title-create">
-                  <div className="title-text">Recipe Title</div>
-                  <div>
+                    <label>Recipe Title
                     <input
                       type="text"
                       value={this.state.title}
                       onChange={this.handleMaxInput("title", 36)}
                       className="title-input"
                     />
+                    </label>
                     <p className="letter-count">
                       {this.letterCount(this.state.title, 35)}
                     </p>
-                  </div>
                 </div>
-                <div className="serving-create">
-                  <div className="serving-text">Serving size(up to 20)</div>
-                  <div>
+                    <label>Serving size(up to 20)
                     <input
                       type="text"
                       value={this.state.servings}
                       onChange={this.servingInput("servings")}
                       className="servings-input"
                     />
-                  </div>
+                    </label>
+                  
                 </div>
                 <div className="country-create">
-                  <div className="country-text">Country</div>
-                  <div>
+                    <label>Country
                     <select
                       className="country-input"
                       value={this.state.country}
@@ -164,8 +160,8 @@ class RecipeForm extends React.Component {
                       <option value="Ethiopia">Ethiopia</option>
                       <option value="Other">Other</option>
                     </select>
-                  </div>
-                </div>
+                  </label>
+                
                 <div className="difficulty-create">
                   <div className="difficulty-text">Difficulty</div>
                   <div>
