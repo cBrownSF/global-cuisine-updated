@@ -111,7 +111,7 @@ class RecipeForm extends React.Component {
                       type="text"
                       value={this.state.name}
                       onChange={this.handleMaxInput("name", 21)}
-                      className="name-input"
+                      className="rec-form-input"
                     />
                     </label>
                     <p className="letter-count">
@@ -124,7 +124,7 @@ class RecipeForm extends React.Component {
                       type="text"
                       value={this.state.title}
                       onChange={this.handleMaxInput("title", 36)}
-                      className="title-input"
+                      className="rec-form-input"
                     />
                     </label>
                     <p className="letter-count">
@@ -136,10 +136,9 @@ class RecipeForm extends React.Component {
                       type="text"
                       value={this.state.servings}
                       onChange={this.servingInput("servings")}
-                      className="servings-input"
+                      className="rec-form-input"
                     />
                     </label>
-                  
                 </div>
                 <div className="country-create">
                     <label>Country
@@ -161,10 +160,9 @@ class RecipeForm extends React.Component {
                       <option value="Other">Other</option>
                     </select>
                   </label>
-                
+                </div>
                 <div className="difficulty-create">
-                  <div className="difficulty-text">Difficulty</div>
-                  <div>
+                    <label>Difficulty
                     <select
                       className="difficulty-input"
                       value={this.state.difficulty}
@@ -175,20 +173,19 @@ class RecipeForm extends React.Component {
                       <option value="Medium">Medium</option>
                       <option value="Hard">Hard</option>
                     </select>
-                  </div>
+                    </label>
                 </div>
                 <div className="description-create">
-                  <div className="description-text">Description</div>
-                  <div>
+                    <label>Description
                     <textarea
                       value={this.state.details}
                       onChange={this.handleMaxInput("details", 361)}
                       className="description-input"
                     />
+                    </label>
                     <p className="letter-count-details">
                       {this.letterCount(this.state.details, 360)}
-                    </p>
-                  </div>
+                    </p>  
                 </div>
                 <div className="form-photo">
                   {this.state.photoUrl ? (
@@ -249,7 +246,6 @@ class RecipeForm extends React.Component {
                 className="submit-input-create"
               />
             </div>
-          </div>
         </form>
         <div className="errors-create">{this.renderErrors()}</div>
       </div>
