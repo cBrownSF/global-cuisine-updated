@@ -177,7 +177,7 @@ class RecipeForm extends React.Component {
                 </div>
                 </div>
               <div className="right-form">
-                <div className="description-create">
+                <div className="long-div-create">
                     <label>Description
                     <textarea
                       value={this.state.details}
@@ -185,11 +185,11 @@ class RecipeForm extends React.Component {
                       className="longer-inputs"
                     />
                     </label>
-                    <p className="letter-count-details">
+                    <p className="letter-count">
                       {this.letterCount(this.state.details, 360)}
                     </p>  
                 </div>
-                <div className="ingredients-create">
+                <div className="long-div-create">
                     <label>Ingredients
                     <textarea
                       value={this.state.ingredients}
