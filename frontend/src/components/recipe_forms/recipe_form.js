@@ -216,8 +216,14 @@ class RecipeForm extends React.Component {
                 <div className="form-photo">
                     <div className="picture-create">
                       <p className="picture-text">
-                        {this.state.photoFile?'':'Upload Picture'}
+                        {this.state.photoFile?'Upload Picure':'Upload Picture'}
                       </p>
+                      {this.state.photoUrl ? (
+                      <img
+                        className="upload-photo-create"
+                        src={this.state.photoUrl}
+                      />
+                    ) : null}
                         <input
                           type="file"
                           name="picture"
@@ -228,12 +234,7 @@ class RecipeForm extends React.Component {
                         Recommended image size 640 X 400
                       </p>
                     </div>
-                    {this.state.photoUrl ? (
-                      <img
-                        className="upload-photo-create"
-                        src={this.state.photoUrl}
-                      />
-                    ) : null}
+                    
                 </div>
                 <div className="submit-recipe-create">
                   <input
