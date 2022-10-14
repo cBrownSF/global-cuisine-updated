@@ -211,36 +211,38 @@ class RecipeForm extends React.Component {
                     </label>
                     <p className="letter-count">{this.letterCount(this.state.instruction, 2000)}</p>
                 </div>
+              </div>
+              <div className = 'final-row-create'>
                 <div className="form-photo">
-                  <div className="picture-create">
-                    <p className="picture-text">
-                      {this.state.photoFile?'':'Upload Picture'}
-                    </p>
-                      <input
-                        type="file"
-                        name="picture"
-                        onChange={this.handleFile}
-                        className="uploadpic-create"
+                    <div className="picture-create">
+                      <p className="picture-text">
+                        {this.state.photoFile?'':'Upload Picture'}
+                      </p>
+                        <input
+                          type="file"
+                          name="picture"
+                          onChange={this.handleFile}
+                          className="uploadpic-create"
+                        />
+                      <p className="recommended-photo">
+                        Recommended image size 640 X 400
+                      </p>
+                    </div>
+                    {this.state.photoUrl ? (
+                      <img
+                        className="upload-photo-create"
+                        src={this.state.photoUrl}
                       />
-                    <p className="recommended-photo">
-                      Recommended image size 640 X 400
-                    </p>
-                  </div>
-                  {this.state.photoUrl ? (
-                    <img
-                      className="upload-photo-create"
-                      src={this.state.photoUrl}
-                    />
-                  ) : null}
+                    ) : null}
+                </div>
+                <div className="submit-recipe-create">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className="submit-input-create"
+                  />
+                </div>
               </div>
-              </div>
-            </div>
-            <div className="submit-recipe-create">
-              <input
-                type="submit"
-                value="Submit"
-                className="submit-input-create"
-              />
             </div>
         </form>
         <div className="errors-create">{this.renderErrors()}</div>

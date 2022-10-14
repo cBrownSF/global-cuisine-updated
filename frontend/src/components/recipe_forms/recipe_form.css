@@ -12,7 +12,15 @@
 }
 .center-recipe{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
 }
 .form-box-create {
   margin-right: 2em;
+}
+.letter-count {
+  font-size: .8rem;
+  margin-top: .5em;
+  margin-bottom: 0;
 }
