@@ -236,6 +236,7 @@ class RecipeForm extends React.Component {
                     </div>
                     
                 </div>
+                <div className="errors-create">{this.renderErrors()}</div>
                 <div className="submit-recipe-create">
                   <input
                     type="submit"
@@ -246,7 +247,7 @@ class RecipeForm extends React.Component {
               </div>
             </div>
         </form>
-        <div className="errors-create">{this.renderErrors()}</div>
+        
       </div>
     );
   }

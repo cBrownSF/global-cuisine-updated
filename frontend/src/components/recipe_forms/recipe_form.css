@@ -48,5 +48,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20em;
+  width: 17em;
+  margin-right:2em;
+}
+.errors-create{
+  width:17em;
+  margin-right:2em;
+}
+.submit-recipe-create{
+  width:17em;
 }
