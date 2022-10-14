@@ -38,6 +38,7 @@
 }
 .create-recipe-form {
   margin-top: 2em;
+  margin-bottom:2em;
 }
 .upload-photo-create {
   width: 100%;
@@ -57,4 +58,12 @@
 }
 .submit-recipe-create{
   width:17em;
+}
+.error-list-create{
+  list-style: none;
+}
+.errors-create {
+  color:red;
+  margin-bottom:.5em;
+  text-align:left;
 }

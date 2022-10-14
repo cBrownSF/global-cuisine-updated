@@ -83,9 +83,9 @@ class RecipeForm extends React.Component {
   }
   renderErrors() {
     return (
-      <ul>
+      <ul className = 'error-list-create'>
         {Object.values(this.props.errors).map((error, i) => (
-          <li key={`error-${i}`}>{error}</li>
+          <li className = 'errors-create' key={`error-${i}`}>{error}</li>
         ))}
       </ul>
     );
