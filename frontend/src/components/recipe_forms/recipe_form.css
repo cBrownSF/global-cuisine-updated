@@ -4,5 +4,15 @@
 }
 .left-form,.right-form {
   display: flex;
-  justify-content: space-around;
+}
+.heading-recipe-text{
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.center-recipe{
+  text-align: center;
+}
+.form-box-create {
+  margin-right: 2em;
 }

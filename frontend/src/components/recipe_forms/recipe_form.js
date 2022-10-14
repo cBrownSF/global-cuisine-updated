@@ -101,10 +101,10 @@ class RecipeForm extends React.Component {
           className="create-form"
           encType="multipart/form-data"
         >
-          <h1 className="heading-recipe-Text">Create Your Own Recipe</h1>
+          <h1 className="heading-recipe-text">Create Your Own Recipe</h1>
           <div className="center-recipe">
               <div className="left-form">
-                <div className="name-create">
+                <div className="form-box-create">
                   <label>Name
                     <input
                       type="text"
@@ -117,7 +117,7 @@ class RecipeForm extends React.Component {
                       {this.letterCount(this.state.name, 20)}
                     </p>
                 </div>
-                <div className="title-create">
+                <div className="form-box-create">
                     <label>Recipe Title
                     <input
                       type="text"
@@ -130,6 +130,7 @@ class RecipeForm extends React.Component {
                       {this.letterCount(this.state.title, 35)}
                     </p>
                 </div>
+                <div className="form-box-create">
                     <label>Serving size(up to 20)
                     <input
                       type="text"
@@ -138,7 +139,8 @@ class RecipeForm extends React.Component {
                       className="rec-form-input"
                     />
                     </label>
-                    <div className="country-create">
+                    </div>
+                    <div className="form-box-create">
                     <label>Country
                     <select
                       className="select-input"
