@@ -1,4 +1,8 @@
 .rec-form-input {
   display:block;
-  margin-top:1.5em;
+  margin-top:1em;
+}
+.left-form,.right-form {
+  display: flex;
+  justify-content: space-around;
 }

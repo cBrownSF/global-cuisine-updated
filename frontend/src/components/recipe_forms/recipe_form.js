@@ -175,18 +175,6 @@ class RecipeForm extends React.Component {
                     </select>
                     </label>
                 </div>
-                <div className="description-create">
-                    <label>Description
-                    <textarea
-                      value={this.state.details}
-                      onChange={this.handleMaxInput("details", 361)}
-                      className="description-input"
-                    />
-                    </label>
-                    <p className="letter-count-details">
-                      {this.letterCount(this.state.details, 360)}
-                    </p>  
-                </div>
                 <div className="form-photo">
                   {this.state.photoUrl ? (
                     <img
@@ -213,29 +201,39 @@ class RecipeForm extends React.Component {
                 </div>
               </div>
               <div className="right-form">
+                <div className="description-create">
+                    <label>Description
+                    <textarea
+                      value={this.state.details}
+                      onChange={this.handleMaxInput("details", 361)}
+                      className="description-input"
+                    />
+                    </label>
+                    <p className="letter-count-details">
+                      {this.letterCount(this.state.details, 360)}
+                    </p>  
+                </div>
                 <div className="ingredients-create">
-                  <div className="ingredients-text">Ingredients</div>
-                  <div>
+                    <label>Ingredients
                     <textarea
                       value={this.state.ingredients}
                       onChange={this.handleInput("ingredients")}
                       className="ingredients-input"
                     />
+                    </label>
                     <p className="letter-count">
                       Add a new line after each ingredient
                     </p>
-                  </div>
                 </div>
                 <div className="instruction-create">
-                  <div className="instruction-text">Instruction</div>
-                  <div>
+                  <label >Instructions
                     <textarea
                       value={this.state.instruction}
                       onChange={this.handleMaxInput("instruction", 2001)}
                       className="instruction-input"
                     />
+                    </label>
                     <p className="letter-count">{this.letterCount(this.state.instruction, 2000)}</p>
-                  </div>
                 </div>
               </div>
             </div>
