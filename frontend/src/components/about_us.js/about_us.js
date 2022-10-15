@@ -7,7 +7,7 @@ class AboutUs extends React.Component{
           <main className="outerAbout">
             <h2 className="meet-team">Meet the team</h2>
             <section className="contributers">
-              <div className="anusha-outer">
+              <div className="member-outer">
                   <h3>Project Lead</h3>
                   <img
                     src="https://global-cuisine.s3.us-west-1.amazonaws.com/anusha.png"
@@ -29,7 +29,7 @@ class AboutUs extends React.Component{
                   </a>
                 </div>
               </div>
-              <div className="cal-outer">
+              <div className="member-outer">
                 <h3>Frontend Lead</h3>
                 <img
                   src="https://global-cuisine-bucket-final.s3.us-west-1.amazonaws.com/cal_brown.jpeg"
@@ -49,7 +49,7 @@ class AboutUs extends React.Component{
                   </a>
                 </div>
               </div>
-              <div className="andrew-outer">
+              <div className="member-outer">
                 <h3>Backend Lead</h3>
                   <img
                     src="https://global-cuisine.s3.us-west-1.amazonaws.com/andrew.jpg"
