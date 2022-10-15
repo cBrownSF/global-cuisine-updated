@@ -1,0 +1,10 @@
+.meet-team {
+  text-align: center;
+  text-transform: uppercase;
+}
+.contributers {
+  display:flex;
+}
+.contributers h3 {
+  text-align: center;;
+}
