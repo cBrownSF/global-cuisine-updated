@@ -45,6 +45,7 @@ class Profile extends React.Component {
             <p>Hi {currentUser.username}!!</p>
           </div>
           <div className="recipe-container">
+            <h3>Your Recipes</h3>
               {userRecipes.length === 0 ? (
                 <div className="no-reciper">
                   <div className="not-detail">
@@ -61,7 +62,6 @@ class Profile extends React.Component {
                 </div>
               ) : (
                 <div className="has-recipe">
-                    <p className="p-your-recipe">Your Recipes</p>
                   {userRecipes.map((listing, index) => (
                     <div key={index + "b"} className="user-recipe">
                       <Link
@@ -87,8 +87,7 @@ class Profile extends React.Component {
               )}
               </div>
             <div className="like-profile">
-              <div className="allLikeTitle">All Liked Recipe</div>
-              <div className="below-all-like">
+              <p className="like-title">All Liked Recipe</p>
                 {userLikes.length === 0 ? (
                   <div className="no-like">
                     <p className="p-not-detail">
@@ -120,7 +119,7 @@ class Profile extends React.Component {
                     ))}
                   </div>
                 )}
-              </div>
+              
             </div>
         </div>
       );

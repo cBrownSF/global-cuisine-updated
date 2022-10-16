@@ -4,6 +4,7 @@
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  margin-top:2em;
 }
 
 .profile-username,
@@ -12,8 +13,18 @@
   flex:1;
   margin-right:2em;
 }
+.like-profile:last-child{
+  margin-right:0;
+}
+.profile-username p, .recipe-container h3,.like-title{
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
 .images-profile {
   width: 100%;
-    height: 68%;
-    object-fit: cover;
+  height: 68%;
+  object-fit: cover;
 }
