@@ -1,0 +1,19 @@
+.profile-outer {
+  display:flex;
+  justify-content: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-username,
+.recipe-container,
+.like-profile{
+  flex:1;
+  margin-right:2em;
+}
+.images-profile {
+  width: 100%;
+    height: 68%;
+    object-fit: cover;
+}

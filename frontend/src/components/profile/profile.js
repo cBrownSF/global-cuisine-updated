@@ -42,11 +42,11 @@ class Profile extends React.Component {
       return (
         <div className="profile-outer">
           <div className="profile-username">
-            <p>Welcome {currentUser.username}!!</p>
+            <p>Hi {currentUser.username}!!</p>
           </div>
-          <div className="likesAndCreate">
+          <div className="recipe-container">
               {userRecipes.length === 0 ? (
-                <div className="detail-no-recipe">
+                <div className="no-reciper">
                   <div className="not-detail">
                     <p className="p-not-detail">
                       You have not created any recipe yet. Please click below to
@@ -60,10 +60,8 @@ class Profile extends React.Component {
                   </div>
                 </div>
               ) : (
-                <div className="yes-recipe-outer">
-                  <div className="your-recipe">
-                    <p className="p-your-recipe">Your Recipe</p>
-                  </div>
+                <div className="has-recipe">
+                    <p className="p-your-recipe">Your Recipes</p>
                   {userRecipes.map((listing, index) => (
                     <div key={index + "b"} className="user-recipe">
                       <Link
@@ -87,6 +85,7 @@ class Profile extends React.Component {
                   ))}
                 </div>
               )}
+              </div>
             <div className="like-profile">
               <div className="allLikeTitle">All Liked Recipe</div>
               <div className="below-all-like">
@@ -123,7 +122,6 @@ class Profile extends React.Component {
                 )}
               </div>
             </div>
-          </div>
         </div>
       );
   }
