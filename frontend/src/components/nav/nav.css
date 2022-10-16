@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .navbar-top {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 .links-nav{
   display:flex;
@@ -9,6 +11,8 @@
   margin-right:3em;
   justify-content: space-evenly;
   list-style: none;
+  padding-left:0;
+  margin-left:0;
 }
 .links-nav li {
   margin-right:0;
@@ -22,8 +26,10 @@
 }
 .link-on-nav{
     text-decoration: none;
-      color: black;
+    color: #2f2fa2;
+    cursor:pointer;
 }
+
 .icon-and-title{
   margin:0 3em 0 2em;
   display: flex;
@@ -32,4 +38,11 @@
 #globe-icon{
   margin-right:1em;
   font-size:3em;
+  color:#2f2fa2
+}
+.text-global,.search-icon-div{
+  color:#2f2fa2
+}
+.text-global{
+  font-size:1.5rem;
 }
