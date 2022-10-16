@@ -27,4 +27,21 @@
   width: 100%;
   height: 68%;
   object-fit: cover;
+  display: block;
+}
+.title-profile{
+  text-align: center;
+  color:#fff;
+  margin: 0;
+  padding: 0.5em 0;
+  background-color: black;
+  font-size:1.3rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+.link-profile {
+    text-decoration: none;
+}
+.profile-recipe-title-image {
+  margin-bottom:1em;
 }

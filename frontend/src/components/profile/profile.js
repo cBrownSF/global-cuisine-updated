@@ -103,16 +103,12 @@ class Profile extends React.Component {
                           className="link-profile"
                         >
                           <div className="profile-recipe-title-image">
-                            <div className="div-image-profile">
                               <img
                                 src={listing.picture}
                                 alt="food-pic"
                                 className="images-profile"
                               ></img>
-                            </div>
-                            <div className="listing-title-profile">
                               <p className="title-profile">{listing.title}</p>
-                            </div>
                           </div>
                         </Link>
                       </div>
