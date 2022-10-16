@@ -182,7 +182,7 @@ class RecipeForm extends React.Component {
                     <textarea
                       value={this.state.details}
                       onChange={this.handleMaxInput("details", 361)}
-                      className="longer-inputs"
+                      className="longer-inputs-descript"
                     />
                     </label>
                     <p className="letter-count">
@@ -201,7 +201,7 @@ class RecipeForm extends React.Component {
                       Add a new line after each ingredient
                     </p>
                 </div>
-                <div className="instruction-create">
+                <div className="long-div-create">
                   <label >Instructions
                     <textarea
                       value={this.state.instruction}
@@ -236,7 +236,6 @@ class RecipeForm extends React.Component {
                     </div>
                     
                 </div>
-                <div className="errors-create">{this.renderErrors()}</div>
                 <div className="submit-recipe-create">
                   <input
                     type="submit"
@@ -244,6 +243,7 @@ class RecipeForm extends React.Component {
                     className="submit-input-create"
                   />
                 </div>
+                <div className="errors-create">{this.renderErrors()}</div>
               </div>
             </div>
         </form>
