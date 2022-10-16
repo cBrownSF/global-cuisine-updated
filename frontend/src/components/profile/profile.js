@@ -87,7 +87,7 @@ class Profile extends React.Component {
               )}
               </div>
             <div className="like-profile">
-              <p className="like-title">All Liked Recipe</p>
+              <p className="like-title">Saved Recipes</p>
                 {userLikes.length === 0 ? (
                   <div className="no-like">
                     <p className="p-not-detail">
