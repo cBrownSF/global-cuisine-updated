@@ -49,7 +49,6 @@ const upload = require('../../image_upload')
 router.post("/",
   passport.authenticate("jwt", { session: false }), upload.single('picture'),
   (req, res) => {
-    console.log(req.file)
     const { isValid, errors } = validateListingInput(req.body,req.file);
     if (!isValid) {
       return res.status(400).json(errors);
@@ -93,8 +92,6 @@ router.patch(
         errors.listing = "No recipe found with that ID";
         return res.status(404).json(errors);
       } else if(listing && !req.file) {
-        console.log(listing)
-        console.log(req.file)
         listing.name = req.body.name,
         listing.ingredients = req.body.ingredients,
         listing.instruction = req.body.instruction,
@@ -125,10 +122,8 @@ router.delete(
     "/:id/delete",
     passport.authenticate('jwt', {session: false}),
     (req, res) => {
-           console.log(req.params)     
         Listing.deleteOne({_id: req.params.id}).then(() => {
-            console.log('hits delete')
-            return res.status(200).json({success: "Successfully deleted"})
+        return res.status(200).json({success: "Successfully deleted"})
          })
      }
 )

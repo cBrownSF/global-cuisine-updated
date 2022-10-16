@@ -5,3 +5,7 @@
 .searchInputs input {
   margin-right: 1em;
 }
+.listingResult {
+  position: absolute;
+  background-color: whitesmoke;
+}

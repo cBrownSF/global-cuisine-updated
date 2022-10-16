@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./filter.css";
 export default function FilterList({listing:{_id, picture, title}}){
-  console.log(_id, picture, title)
   return (
     <div className="filter-item">
       <Link to={`/recipes/${_id}`} className="link-filter">
