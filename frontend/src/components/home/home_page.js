@@ -6,7 +6,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="home-page-container">
-        <h1 className="home-phase">Explore the world through food</h1>
+        <h1 className="home-title">Explore the world through food</h1>
         <div className="filter-home">
           <FilterContainer />
         </div>
