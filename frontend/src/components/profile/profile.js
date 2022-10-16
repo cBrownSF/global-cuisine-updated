@@ -47,16 +47,15 @@ class Profile extends React.Component {
           <div className="recipe-container">
             <h3>Your Recipes</h3>
               {userRecipes.length === 0 ? (
-                <div className="no-reciper">
+                <div className="no-recipe">
                   <div className="not-detail">
                     <p className="p-not-detail">
-                      You have not created any recipe yet. Please click below to
-                      create your own recipe.
+                      You have not created any recipes yet.
                     </p>
                   </div>
                   <div className="link-create-profile">
                     <Link to="/recipes/new" className="l-create-recipe">
-                      Create Recipe
+                      <button className='create-button'>Create Recipe</button>
                     </Link>
                   </div>
                 </div>
