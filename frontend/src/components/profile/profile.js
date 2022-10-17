@@ -38,7 +38,7 @@ class Profile extends React.Component {
           }
         }
       }
-
+      debugger;
       return (
         <div className="profile-outer">
           <div className="profile-username">
