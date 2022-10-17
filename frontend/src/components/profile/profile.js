@@ -4,11 +4,18 @@ import { Link } from "react-router-dom";
 // import LikeIndexContainer from "../likes/like_index_container"
 
 class Profile extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    }
+  }
   componentDidMount() {
     this.props.getUserListings(this.props.currentUser.id)
     this.props.getLikes()
-    this.props.getListings()
+    this.props.getListings().then(() => {
+      this.setState({ loaded: true })
+    })
   }
 
   render(){
@@ -38,7 +45,10 @@ class Profile extends React.Component {
           }
         }
       }
-      debugger;
+      if (this.state.loaded === false) {
+        debugger;
+        return null;
+      }
       return (
         <div className="profile-outer">
           <div className="profile-username">
