@@ -46,7 +46,6 @@ class Profile extends React.Component {
         }
       }
       if (this.state.loaded === false) {
-        debugger;
         return null;
       }
       return (
