@@ -1,0 +1,12 @@
+.title-review{
+  margin:0;
+  font-size:1.2rem;
+  font-weight:600;
+}
+.leave-review-inner {
+  font-size:1.5rem;
+  font-weight:900;
+}
+.review-logged-in {
+  border:solid black 2px
+}

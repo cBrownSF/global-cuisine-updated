@@ -4,20 +4,18 @@ import { Link } from "react-router-dom";
 const RecipeIndexItem = (props) => {
   const {listing} = props;
   return (
-    <div className="each-recipe">
-      <Link to={`/recipes/${listing._id}`} className="link-show">
-        <div className="index-item-image">
+  <Link to={`/recipes/${listing._id}`} className="link-item-index">
+    <div className="recipe-card">
           <img
             src={listing.picture}
             alt="food-pic"
-            className="images-index"
+            className="image-index-item"
           ></img>
-        </div>
         <div className="title-div">
-          <p className="title-index">{listing.title}</p>
+          <h3 className="title-index-item">{listing.title}</h3>
         </div>
-      </Link>
     </div>
+      </Link>
   );
 }
 

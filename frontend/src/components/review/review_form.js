@@ -1,6 +1,6 @@
 import React from 'react';
 // import { withRouter } from 'react-router';
-import { Link } from "react-router-dom";
+import './review_form.css'
 class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
@@ -65,16 +65,12 @@ class ReviewForm extends React.Component {
             this.props.currentUser.id === this.props.listing.author_id ? (
             ""
           ) : (
-            <div className="review-loggedIn">
-              <div className="leave-review-div">
+            <div className="review-logged-in">
                 <h3 className="leave-review-inner">Leave a review</h3>
-              </div>
               <form onSubmit={this.handleSubmit}>
                 <div className="reviews-create-show">
                   <div className="name-input-review">
-                    <div className="text-name-review">
-                      <p>Name</p>
-                    </div>
+                      <p className ='title-review'>Name</p>
                     <div>
                       <input
                         type="text"
@@ -86,9 +82,7 @@ class ReviewForm extends React.Component {
                     </div>
                   </div>
                   <div className="body-input-review">
-                    <div className="text-body-review">
-                      <p>Review</p>
-                    </div>
+                    <p className ='title-review'>Review</p>
                     <div>
                       <textarea
                         value={this.state.review}
@@ -99,7 +93,7 @@ class ReviewForm extends React.Component {
                     </div>
                   </div>
                   <div className="score-input-review">
-                    <div>Score</div>
+                    <p className ='title-review'>Score</p>
                     <div>
                       <input
                         type="text"

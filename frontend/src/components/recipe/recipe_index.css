@@ -1,4 +1,36 @@
-.all img {
-  width:200px;
-  height: 200px
+.all {
+  display:flex;
+  flex-wrap: wrap;
 }
+.recipe-card {
+  width:90%;
+  margin: 0 auto;
+  max-width:250px;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  border-radius:15px;
+}
+.title-index-item {
+  color: white;
+  font-size:1.15rem;
+  font-family:inherit;
+  padding:1em;
+  margin:0;
+  text-align:center;
+}
+.image-index-item{
+  object-fit: cover;
+  display:block;
+  border-radius:15px 15px 0 0;
+  height:200px
+}
+.link-item-index{
+  text-decoration: none;
+  cursor:pointer;
+}
+/* .all {
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 2em 0 2em;
+} */
