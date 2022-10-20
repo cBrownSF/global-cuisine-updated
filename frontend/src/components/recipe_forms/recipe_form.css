@@ -99,12 +99,12 @@ input[type="file"]::file-selector-button {
   cursor:pointer;
   font-family:inherit;
   border: solid 2px #2f2fa2;
-  transition:.45s;
+  /* transition:.45s; */
 }
-input[type="file"]::file-selector-button:hover {
+/* input[type="file"]::file-selector-button:hover {
   background-color: white;
   color:black;
-}
+} */
 .recommended-photo {
   margin-top:2em;
 }
