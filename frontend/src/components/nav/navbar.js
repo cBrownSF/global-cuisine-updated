@@ -30,7 +30,7 @@ class NavBar extends React.Component {
           <li><Link to={"/recipes"} className="link-on-nav">All Recipes</Link></li>
           <li><Link to={"/profile"} className="link-on-nav">Profile</Link></li>
           <li><Link to={"/recipes/new"} className="link-on-nav">Create Recipe</Link></li>
-          <li><button onClick={this.logoutUser} className="logout-btn">Logout</button></li>
+          <li><button onClick={this.logoutUser} className="logout-demo-button">Logout</button></li>
           <li><Link to="/about" className="link-on-nav">About Us</Link></li>
         </ul>
       );
@@ -39,7 +39,7 @@ class NavBar extends React.Component {
         <ul className="links-nav">
           <li><Link to={"/signup"} className="link-on-nav">Signup</Link></li>
           <li><Link to={"/login"} className="link-on-nav">Login</Link></li>
-          <li><button onClick={this.demoLogin} className="link-on-nav">Demo Login</button></li>
+          <li><button onClick={this.demoLogin} className="logout-demo-button">Demo Login</button></li>
           <li><Link to="/recipes" className="link-on-nav">All Recipes</Link></li>
           <li><Link to="/about" className="link-on-nav">About Us</Link></li>
         </ul>
