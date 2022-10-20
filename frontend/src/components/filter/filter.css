@@ -3,10 +3,21 @@
   justify-content: center;  
   flex-shrink: 1;
   flex-wrap:wrap;
+  background-color: white;
+  appearance: none;
+ 
 }
 .home-page-btns button{
   display:inline-block;
   margin-left:1em;
+  cursor: pointer;
+  appearance: none;
+  font-size:1rem;
+  font-family:inherit;
+  background-color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
 }
 .home-page-btns button:first-child {
   margin-left:0;
