@@ -6,16 +6,24 @@
   width:90%;
   margin: 0 auto;
   max-width:250px;
-  background-color: black;
+  background-color: white;
   display:flex;
   flex-direction: column;
   border-radius:15px;
+  border:1px solid #2f2fa2;
+  min-height:100%
 }
 .title-index-item {
   color: white;
+  color: #2f2fa2;
+  opacity:.9;
   font-size:1.15rem;
   font-family:inherit;
-  padding:1em;
+  padding-top: .5em;
+  padding-left:.2em;
+  padding-right:.2em;
+  padding-bottom:.5em;
+  font-family: inherit;
   margin:0;
   text-align:center;
 }
@@ -23,7 +31,7 @@
   object-fit: cover;
   display:block;
   border-radius:15px 15px 0 0;
-  height:200px
+  height:200px;
 }
 .link-item-index{
   text-decoration: none;
@@ -34,3 +42,10 @@
   flex-wrap:wrap;
   margin:0 2em 0 2em;
 } */
+.link-item-index{
+  flex:1;
+}
+.title-div{
+  display:flex;
+  justify-content: center;
+}
