@@ -11,14 +11,20 @@
   appearance: none;
   font-size:1rem;
   font-family:inherit;
-  background-color: white;
+  background-color: black;
+  color:white;
   appearance: none;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  border:solid 1.5px #2f2fa2;
+  border:solid 2px #2f2fa2;
   border-radius:5px;
-  font-weight:700
+  font-weight:700;
+  transition:0.45s
+}
+.home-page-btns button:hover {
+  background-color: white;
+  color:black
 }
 .home-page-btns button:first-child {
   margin-left:0;
