@@ -1,26 +1,22 @@
-/* .home-title{
-  margin-top:6em;
-} */
-/* .home-page-container{
-  background-color: antiquewhite;
-  min-height: 100vh;
-  min-width: 100vw;
-} */
+
 .home-page-container{
   position:relative;
 }
 .home-page-container::before{
   content: "";
   background-image: url('/world_map.png');
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 88vh;
-    filter: invert(95%); 
-    position:absolute;
-    border:solid 3px blue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88vh;
+  filter: invert(95%); 
+  position:absolute;
 }
 
 .home-page-inside{
  position:relative;
+}
+.home-title {
+  margin-top: 4em;
+  text-align:center;
 }
