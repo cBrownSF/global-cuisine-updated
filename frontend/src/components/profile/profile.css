@@ -27,7 +27,9 @@
   width: 100%;
   object-fit: cover;
   display: block;
+      border-radius: 25px 25px 0 0;
 }
+
 .title-profile{
   text-align: center;
   color:#fff;
@@ -37,6 +39,7 @@
   font-size:1.3rem;
   font-weight: bold;
   letter-spacing: .5px;
+  border-radius: 0 0 25px 25px;
 }
 .link-profile {
     text-decoration: none;
@@ -57,7 +60,7 @@
   margin-top: 0;
 }
 .create-button{
-  background-color: black;
+  background-color:  black;
   appearance: none;
   border:none;
   color:white;

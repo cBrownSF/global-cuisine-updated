@@ -1,9 +1,12 @@
 .rec-form-input,.longer-inputs,.select-input {
   display:block;
   margin-top:1em;
+  border: solid 1.5px black;
+  border-radius: 5px;
 }
 .left-form {
   display: flex;
+  font-weight:550
 }
 .heading-recipe-text{
   text-align: center;
@@ -23,10 +26,12 @@
   margin-top: .5em;
   margin-bottom: 0;
   overflow-wrap: break-word;
+  color:#2f2fa2;
+  font-weight:400
 }
 .long-div-create {
   margin-top: 2em;
-
+  font-weight:550
 }
 .longer-inputs{
   width:95%;
@@ -42,7 +47,7 @@
 }
 
 .create-recipe-form {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom:2em;
   display: flex;
   justify-content: center
@@ -67,4 +72,15 @@
   color:red;
   margin-bottom:.5em;
   text-align:left;
+}
+.right-form textarea {
+  border:solid 1.5px black;
+  border-radius:15px;
+}
+.picture-text {
+  font-weight:550
+}
+.left-form select {
+  color: #2f2fa2;
+  cursor:pointer;
 }
