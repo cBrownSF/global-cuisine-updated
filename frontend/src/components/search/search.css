@@ -1,15 +1,15 @@
 .searchInputs{
   display:flex;
   align-items: center;
-  
-}
-.searchInputs input {
-  margin-right: 1em;
-  margin-right: 1em;
-  font-size: 1rem;
-  padding: 5px 0 5px 10px;
   border-radius: 15px;
   border: solid 1px black;
+}
+.searchInputs input {
+  font-size: 1rem;
+  margin: 5px 0 5px 10px;
+  appearance: none;
+  border:none;
+  outline:none;
 }
 .listingResult {
   position: absolute;
