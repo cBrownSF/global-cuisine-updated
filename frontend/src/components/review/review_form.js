@@ -54,8 +54,8 @@ class ReviewForm extends React.Component {
       }
     }
   } 
-  
   render() {
+    console.log(this.props.currentUser)
     {
     return (
       <div className="Main-Review-Form">
@@ -70,16 +70,7 @@ class ReviewForm extends React.Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="reviews-create-show">
                   <div className="name-input-review">
-                      <p className ='title-review'>Name</p>
-                    <div>
-                      <input
-                        type="text"
-                        value={this.state.reviewer_name}
-                        onChange={this.update("reviewer_name")}
-                        className="name-input-show"
-                        placeholder="  Enter your name"
-                      />
-                    </div>
+                      <p className ='title-review'>{this.state.reviewer_name}</p>
                   </div>
                   <div className="body-input-review">
                     <p className ='title-review'>Review</p>
@@ -94,7 +85,6 @@ class ReviewForm extends React.Component {
                   </div>
                   <div className="score-input-review">
                     <p className ='title-review'>Score</p>
-                    <div>
                       <input
                         type="text"
                         value={this.state.score}
@@ -102,7 +92,6 @@ class ReviewForm extends React.Component {
                         className="score-input"
                         placeholder="  Enter a number ranging 1 to 5"
                       />
-                    </div>
                   </div>
                   <div className="div-button-review">
                     <button

@@ -8,7 +8,7 @@ const mSTP = (state, ownProps) => ({
         review: '',
         score: "",
         listing_id: ownProps.listingId,
-        reviewer_name: ""
+        reviewer_name: state.session.user? state.session.user.username: ""
     },
     formType: 'Create Review',
     currentUser: state.session.user,

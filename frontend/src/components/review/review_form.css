@@ -6,7 +6,23 @@
 .leave-review-inner {
   font-size:1.5rem;
   font-weight:900;
+  margin-top:0;
+  margin-bottom:1em;
 }
-.review-logged-in {
-  border:solid black 2px
+.review-signedIn {
+  /* border:solid black 2px; */
+  display:flex;
+  justify-content:center;
+}
+.review-logged-in{
+  padding:2em;
+}
+.title-review {
+  margin-top:0;
+  margin-bottom:1em;
+}
+.body-input-review,
+.name-input-review,
+.score-input-review {
+  margin-bottom:1em;
 }
