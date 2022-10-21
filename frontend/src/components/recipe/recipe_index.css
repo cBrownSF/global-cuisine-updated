@@ -1,6 +1,7 @@
 .all {
   display:flex;
   flex-wrap: wrap;
+  margin:2em 2em;
 }
 .recipe-card {
   width:90%;
@@ -11,7 +12,8 @@
   flex-direction: column;
   border-radius:15px;
   border:1px solid #2f2fa2;
-  min-height:100%
+  min-height:100%;
+  margin-bottom:2em
 }
 .title-index-item {
   color: white;
@@ -32,6 +34,7 @@
   display:block;
   border-radius:15px 15px 0 0;
   height:200px;
+  width:100%;
 }
 .link-item-index{
   text-decoration: none;

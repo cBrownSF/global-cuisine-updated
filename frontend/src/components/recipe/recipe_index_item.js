@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const RecipeIndexItem = (props) => {
   const {listing} = props;
   return (
-  <Link to={`/recipes/${listing._id}`} className="link-item-index">
     <div className="recipe-card">
+      <Link to={`/recipes/${listing._id}`} className="link-item-index">
           <img
             src={listing.picture}
             alt="food-pic"
@@ -14,8 +14,8 @@ const RecipeIndexItem = (props) => {
         <div className="title-div">
           <h3 className="title-index-item">{listing.title}</h3>
         </div>
-    </div>
       </Link>
+    </div>
   );
 }
 
