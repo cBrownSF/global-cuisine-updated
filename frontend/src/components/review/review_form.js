@@ -70,18 +70,16 @@ class ReviewForm extends React.Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="reviews-create-show">
                   <div className="name-input-review">
-                      <p className ='title-review'>{this.state.reviewer_name}</p>
+                      <p className ='name-review'>{this.state.reviewer_name}</p>
                   </div>
                   <div className="body-input-review">
-                    <p className ='title-review'>Review</p>
-                    <div>
+                    <p className ='title-review'>Description</p>
                       <textarea
                         value={this.state.review}
                         onChange={this.update("review")}
                         className="body-input"
                         placeholder=" Enter the details"
                       />
-                    </div>
                   </div>
                   <div className="score-input-review">
                     <p className ='title-review'>Score</p>
@@ -90,8 +88,8 @@ class ReviewForm extends React.Component {
                         value={this.state.score}
                         onChange={this.numberInput("score")}
                         className="score-input"
-                        placeholder="  Enter a number ranging 1 to 5"
                       />
+                     <p className='>Enter a number ranging 1 to 5</p> 
                   </div>
                   <div className="div-button-review">
                     <button

@@ -4,10 +4,11 @@
   font-weight:600;
 }
 .leave-review-inner {
-  font-size:1.5rem;
+  font-size:2.5rem;
   font-weight:900;
   margin-top:0;
   margin-bottom:1em;
+  text-align:center;
 }
 .review-signedIn {
   /* border:solid black 2px; */
@@ -16,13 +17,32 @@
 }
 .review-logged-in{
   padding:2em;
+  border:solid 1px black;
 }
 .title-review {
   margin-top:0;
   margin-bottom:1em;
+  color: #2f2fa2;
 }
 .body-input-review,
 .name-input-review,
 .score-input-review {
   margin-bottom:1em;
+}
+.name-review{
+  color: #2f2fa2;
+  font-size:1.5rem;
+  text-align:left;
+  font-weight:600;
+}
+.body-input-review textarea{
+  width:90%;
+  font-family: inherit;
+  font-size:1rem;
+  padding:.5em;
+  height:4.5em;
+  resize:none;
+}
+.Main-Review-Form{
+  margin-top:4em;
 }
