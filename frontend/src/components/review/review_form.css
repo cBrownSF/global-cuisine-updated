@@ -42,6 +42,9 @@
   padding:.5em;
   height:4.5em;
   resize:none;
+  border:solid 1.5px black;
+  border-radius:13px;
+  font-family:inherit;
 }
 .Main-Review-Form{
   margin-top:4em;
@@ -51,4 +54,11 @@
   color:red;
   margin:.5em 0 0 0 ;
 
+}
+.score-input {
+  border: solid 1.5px black;
+  border-radius: 8px;
+  padding: .5em;
+  font-size: 1rem;
+  font-family:inherit;
 }
