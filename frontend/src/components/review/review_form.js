@@ -31,12 +31,11 @@ class ReviewForm extends React.Component {
         )
         .then(this.props.removeReviewErrors());
   }
-
   renderReviewErrors() {
     return (
-        <ul>
+        <ul className = 'errors-list'>
           {this.props.errors.map((error, i) => (
-            <li key={`error ${i}`}>{error}</li>
+            <li className='errors' key={`error ${i}`}>{error}</li>
           ))}
         </ul>
     );
@@ -55,7 +54,7 @@ class ReviewForm extends React.Component {
     }
   } 
   render() {
-    console.log(this.props.currentUser)
+    console.log(this.state.reviewer_name)
     {
     return (
       <div className="Main-Review-Form">
@@ -70,7 +69,14 @@ class ReviewForm extends React.Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="reviews-create-show">
                   <div className="name-input-review">
-                      <p className ='name-review'>{this.state.reviewer_name}</p>
+                      <p className ='title-review'>Name</p>
+                      <input
+                        type="text"
+                        value={this.state.reviewer_name}
+                        onChange={this.update("reviewer_name")}
+                        className="score-name-input"
+                        placeholder="Enter your name"
+                      />
                   </div>
                   <div className="body-input-review">
                     <p className ='title-review'>Description</p>
@@ -87,7 +93,7 @@ class ReviewForm extends React.Component {
                         type="text"
                         value={this.state.score}
                         onChange={this.numberInput("score")}
-                        className="score-input"
+                        className="score-name-input"
                       />
                      <p className='score-subtext'>Enter a number ranging 1 to 5</p> 
                   </div>
@@ -95,7 +101,7 @@ class ReviewForm extends React.Component {
                     <button
                       type="submit"
                       value={this.props.formType}
-                      className="Create-Review-Button"
+                      className="create-review-button"
                     >
                       {this.props.formType}
                     </button>
