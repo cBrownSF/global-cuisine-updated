@@ -38,7 +38,7 @@ class LoginForm extends React.Component {
 
   renderErrors() {
     return (
-      <ul className = "error-list">
+      <ul className = "errors-list">
         {Object.values(this.props.errors).map((error, i) => (
           <li className="errors" key={`error-${i}`}>
             {error}
@@ -70,7 +70,7 @@ class LoginForm extends React.Component {
               onChange={this.handleInput('password')}
               placeholder="Password"
             />
-            <input className = 'submit-button' type="submit" value="Submit" />
+            <input className = 'sign-up-submit-button' type="submit" value="Submit" />
             {this.renderErrors()}
         </form>
       </div>

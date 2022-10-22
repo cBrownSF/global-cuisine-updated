@@ -46,3 +46,9 @@
 .Main-Review-Form{
   margin-top:4em;
 }
+.score-subtext {
+  font-size:.8rem;
+  color:red;
+  margin:.5em 0 0 0 ;
+
+}

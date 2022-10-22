@@ -89,7 +89,7 @@ class ReviewForm extends React.Component {
                         onChange={this.numberInput("score")}
                         className="score-input"
                       />
-                     <p className='>Enter a number ranging 1 to 5</p> 
+                     <p className='score-subtext'>Enter a number ranging 1 to 5</p> 
                   </div>
                   <div className="div-button-review">
                     <button
