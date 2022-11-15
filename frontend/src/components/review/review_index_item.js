@@ -1,18 +1,18 @@
 import React,{useEffect,useState} from 'react';
-
+import './review_form.css'
 
 const ReviewIndexItem = ({ review, updateReview,listingId, currentUser, deleteReview }) => {
 
   return (
-    <div>
+    <div className='review-and-button'>
       <div className="review-index-items">
         {listingId !== review.listing_id ? (
           ""
         ) : (
           <div className="review-index-item">
-            <div>{review.reviewer_name}</div>
+            <div className='reviewer-name'>{review.reviewer_name}</div>
             <div className="review-score">
-              <p>Rating: {review.score}</p>
+              <p><span style= {{fontWeight:"900"}}>Rating: </span><span> {review.score}</span></p>
             </div>
             <div className="review-title">
               <p>{review.review}</p>

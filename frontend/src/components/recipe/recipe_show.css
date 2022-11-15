@@ -1,0 +1,32 @@
+/* not logged in review*/
+
+.signup-log-review-link {
+  border: black;
+  padding: 1em 2em;
+}
+
+.sign-up-log-in-review {
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-login-review{
+  text-decoration:none;
+}
+.signup-log-review-link-div{
+border: solid 1px;
+  padding: 0.5em 1em;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.not-signed-in-review {
+  border:solid 2px black;
+  padding:2em;
+  margin-top: 3em;
+}
+.must-be-signed{
+  margin:0;
+  margin-bottom:1em;
+  font-weight:600;
+  color: #2f2fa2;
+}

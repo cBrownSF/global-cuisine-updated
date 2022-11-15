@@ -359,24 +359,21 @@ class RecipeShow extends React.Component {
               />
             </div>
           ) : (
-            <div className="notloggedIn-review">
-              <div>
-                Please either create an account or log in to write review.
-              </div>
-              <div className="signorlog-review">
-                <div className="signup-review">
-                  <Link to="/signup" className="link-sign-review">
-                    Create an Account
+            <div className="not-signed-in-review">
+              <p className='must-be-signed'>You must be signed in to add a review</p>
+              <div className="sign-up-log-in-review">
+                  <Link to="/signup" className="link-login-review">
+                  <div className="signup-log-review-link-div">
+                      Sign Up
+                  </div>
                   </Link>
-                </div>
-                <div>or</div>
-                <div className="login-review">
                   <Link to="/login" className="link-login-review">
-                    Log in
+                  <div className="signup-log-review-link-div">
+                      Log in
+                  </div>
                   </Link>
                 </div>
               </div>
-            </div>
           )}
         </div>
       </div>
@@ -690,22 +687,19 @@ class RecipeShow extends React.Component {
                   />
                 </div>
               ) : (
-                <div className="notloggedIn-review">
-                  <div>
-                    Please either create an account or log in to write review.
-                  </div>
-                  <div className="signorlog-review">
-                    <div className="signup-review">
-                      <Link to="/signup" className="link-sign-review">
-                        Create an Account
-                      </Link>
+                <div className="not-signed-in-review">
+                  <p className='must-be-signed'>You must be signed in to add a review</p>
+                  <div className="sign-up-log-in-review">
+                      <Link to="/signup" className="link-login-review">
+                    <div className="signup-log-review-link-div">
+                        Sign Up
                     </div>
-                    <div>or</div>
-                    <div className="login-review">
+                    </Link>
                       <Link to="/login" className="link-login-review">
+                    <div className="signup-log-review-link-div">
                         Log in
-                      </Link>
                     </div>
+                      </Link>
                   </div>
                 </div>
               )}

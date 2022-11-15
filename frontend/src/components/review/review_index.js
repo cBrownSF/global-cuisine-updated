@@ -23,8 +23,8 @@ class ReviewIndex extends React.Component {
           </div>
         ) : (
           <div className="title-of-all-reviews">
-            <h1 className="reviews-title"><p>Reviews</p></h1>
-            <ul>
+            <h1 className="reviews-title">Reviews</h1>
+            <ul className = 'review-list'>
               {reviews.map((review) => (
                 <ReviewIndexItem
                   review={review}
