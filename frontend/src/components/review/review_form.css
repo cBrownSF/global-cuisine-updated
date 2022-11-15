@@ -62,10 +62,10 @@
   font-size: 1rem;
   font-family:inherit;
 }
-.create-review-button {
+.create-review-button,.btn-delete-review-show {
   appearance: none;
   background-color: black;
-  padding:.5em 1em;
+  padding:.5em 1.25em;
   font-size:1.2rem;
   border-radius: 7px;
   color: white;
@@ -74,7 +74,7 @@
   transition:0.45s;
   cursor:pointer;
 }
-.create-review-button:hover {
+.create-review-button:hover,.btn-delete-review-show:hover {
   color:black;
   background-color: white;
 }
@@ -96,4 +96,8 @@
 .reviews-title{
   padding-inline-start: 20px;
   margin-bottom:0
+}
+.btn-delete-review-show{
+  font-size:.8rem;
+  margin:0
 }
