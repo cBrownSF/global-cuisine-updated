@@ -19,7 +19,7 @@ class ReviewIndex extends React.Component {
       <div className="reviews-list-class">
         {reviews.length === 0 ? (
           <div className="no-reviews-show">
-            <p>No reviews yet</p>
+            <h1>No reviews yet</h1>
           </div>
         ) : (
           <div className="title-of-all-reviews">
