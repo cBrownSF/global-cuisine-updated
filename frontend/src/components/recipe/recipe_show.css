@@ -34,4 +34,35 @@ border: solid 1px;
 /* Reviews and likes */
 .zero-star-icons,.one-star-icons, .one-half-icons, .two-star-icons, .two-half-icons,.third-half-icons,.third-star-icons,.fourth-star-icons,.fourth-half-icons,.fifth-star-icons {
   display: flex;
+  color: #2f2fa2;
+}
+/* Ingredients */
+.div-ingredientservings,.div-instruction-difficulty {
+  display:flex;
+  font-size:1.5rem;
+  background-color: #2f2fa2;
+  color:white;
+  padding:0.2em;
+}
+.servings-show,.difficulty-show{
+  padding-left:0.3em;
+}
+.ingredients-word{
+  font-weight:900;
+}
+.show-ingredient-inner {
+  line-height: 1.7;
+}
+.instruction-show-inner,.show-ingredient-inner{
+  padding:0.6em 0.4em 0.6em 0.4em;
+  border:solid 2px #2f2fa2;
+  border-top:none;
+}
+.show-img {
+  height:300px;
+  width:100%;
+  object-fit: cover;
+}
+.left-show{
+  width:50%;
 }

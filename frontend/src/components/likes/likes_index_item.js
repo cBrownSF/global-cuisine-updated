@@ -8,6 +8,7 @@ const LikeIndexItem = ({ like, updateLike,listingId, currentUser, deleteLike }) 
       listingId === like.listing_id ? (
         <div className="delete-like">
           <button
+            className = "thumbs-down-button"
             onClick={() =>
               deleteLike(like._id).then(() => {
                 updateLike(listingId);

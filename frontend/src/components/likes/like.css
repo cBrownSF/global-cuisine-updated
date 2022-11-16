@@ -3,6 +3,7 @@
 }
 .like-index-stars{
   display:flex;
+  justify-content: space-between;
 }
 .like-index{
   display:flex;
@@ -10,7 +11,7 @@
 .likes-list-class{
   margin-left:0.5em;
 }
-.thumbs-up-button{
+.thumbs-up-button,.thumbs-down-button{
   appearance: none;
   cursor:pointer;
   background:none;
@@ -18,4 +19,5 @@
   margin:0;
   padding:0;
   font-size:1rem;
+  color: #2f2fa2;
 }
