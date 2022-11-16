@@ -19,7 +19,6 @@ class LikeIndex extends React.Component {
     });
     return (
       <div className="like-index">
-        <div className="likes-list-class">{`likes` + ` ` + count}</div>
         <div>
           {likes.map((like, index) => (
             <LikeIndexItem
@@ -32,6 +31,7 @@ class LikeIndex extends React.Component {
             />
           ))}
         </div>
+        <div className="likes-list-class">{`likes` + ` ` + count}</div>
       </div>
     );
   }
