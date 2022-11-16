@@ -1,0 +1,21 @@
+.like-index-create{
+  display:flex;
+}
+.like-index-stars{
+  display:flex;
+}
+.like-index{
+  display:flex;
+}
+.likes-list-class{
+  margin-left:0.5em;
+}
+.thumbs-up-button{
+  appearance: none;
+  cursor:pointer;
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  font-size:1rem;
+}

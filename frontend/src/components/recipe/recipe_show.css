@@ -30,3 +30,8 @@ border: solid 1px;
   font-weight:600;
   color: #2f2fa2;
 }
+
+/* Reviews and likes */
+.zero-star-icons,.one-star-icons, .one-half-icons, .two-star-icons, .two-half-icons,.third-half-icons,.third-star-icons,.fourth-star-icons,.fourth-half-icons,.fifth-star-icons {
+  display: flex;
+}

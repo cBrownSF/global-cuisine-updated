@@ -40,11 +40,12 @@ class LikeForm extends React.Component {
   }
   render() {    
     return (
-      <div className="Main-Like-Form">
+      <div className="main-like-form">
         {this.props.currentUser.id === this.props.listing.author_id ? "" : 
         <form onSubmit={this.handleSubmit}>
             <button
               type="submit"
+              className='thumbs-up-button'
             >
               <i className="fas fa-thumbs-up" id="thumbup"></i>
             </button>
