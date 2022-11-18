@@ -53,7 +53,10 @@ class RecipeShow extends React.Component {
     <div className="outermost-show">
       <div className="right-left">
         <div className="left-show">
-          <div>
+          <div className="show-title">
+             <p className="show-title-p">{listing.title}</p>
+          </div>
+        <div>
             <img src={listing.picture} className="show-img" alt="food"></img>
           </div>
           <div className="like-index-stars">
@@ -313,9 +316,6 @@ class RecipeShow extends React.Component {
           </div>
         </div>
         <div className="right-show">
-          <div className="show-title">
-            <p className="show-title-p">{listing.title}</p>
-          </div>
           <div className="lishing-show-ingredient">
             <div className="below-ingredient-title">
               <div className="div-ingredientservings">
@@ -388,6 +388,9 @@ class RecipeShow extends React.Component {
         <div className="outermost-show">
           <div className="right-left">
             <div className="left-show">
+              <div className="show-title">
+                <p className="show-title-p">{listing.title}</p>
+              </div>
               <div>
                 <img
                   src={listing.picture}
@@ -641,9 +644,6 @@ class RecipeShow extends React.Component {
               </div>
             </div>
             <div className="right-show">
-              <div className="show-title">
-                <p className="show-title-p">{listing.title}</p>
-              </div>
               <div className="lishing-show-ingredient">
                 <div className="below-ingredient-title">
                   <div className="div-ingredientservings">

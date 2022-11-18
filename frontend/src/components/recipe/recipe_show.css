@@ -43,10 +43,9 @@ border: solid 1px;
   background-color: #2f2fa2;
   color:white;
   padding:0.2em;
+  justify-content: center;
 }
-.servings-show,.difficulty-show{
-  padding-left:0.3em;
-}
+
 .ingredients-word{
   font-weight:900;
 }
@@ -55,8 +54,6 @@ border: solid 1px;
 }
 .instruction-show-inner,.show-ingredient-inner{
   padding:0.6em 0.4em 0.6em 0.4em;
-  border:solid 2px #2f2fa2;
-  border-top:none;
 }
 .show-img {
   height:300px;
@@ -64,5 +61,23 @@ border: solid 1px;
   object-fit: cover;
 }
 .left-show{
-  width:50%;
+  width:80%;
+  margin:0 auto;
+}
+.below-ingredient-title,.instruction-show{
+  box-shadow:0 1px 5px 0 rgb(0 0 0 / 8%);
+  width:60%;
+  margin:0 auto;
+}
+.instruction-show {
+  margin-top:2em;
+}
+.outermost-show {
+  margin-top:3em;
+}
+.show-title-p{
+  text-align: center;
+    font-weight: 900;
+        font-size: 2rem;
+        margin-top: 0;
 }
