@@ -26,6 +26,7 @@ export default class Filter extends React.Component {
   };
   componentDidMount() {
     this.props.getListings();
+    console.log(this.state.listings)
   }
   render() {
     return (
