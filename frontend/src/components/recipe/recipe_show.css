@@ -56,13 +56,14 @@ border: solid 1px;
   padding:0.6em 0.4em 0.6em 0.4em;
 }
 .show-img {
-  height:300px;
+  height:400px;
   width:100%;
   object-fit: cover;
 }
 .left-show{
-  width:80%;
+  width:60%;
   margin:0 auto;
+  margin-bottom:2em;
 }
 .below-ingredient-title,.instruction-show{
   box-shadow:0 1px 5px 0 rgb(0 0 0 / 8%);
@@ -73,11 +74,12 @@ border: solid 1px;
   margin-top:2em;
 }
 .outermost-show {
-  margin-top:3em;
+  margin-top:1.5em;
 }
 .show-title-p{
   text-align: center;
-    font-weight: 900;
-        font-size: 2rem;
-        margin-top: 0;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom:0.5em;
 }
