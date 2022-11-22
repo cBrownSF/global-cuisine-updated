@@ -5,7 +5,6 @@ import "./recipe_index.css";
 class RecipeIndex extends React.Component {
   componentDidMount() {
     this.props.receiveListings()
-    console.log(this.props.listings);
   }
 
   render() {
