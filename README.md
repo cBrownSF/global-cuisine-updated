@@ -1,6 +1,10 @@
 # Global Cuisine
 Heroku Link <br/>
-https://global-cuisine.herokuapp.com/#/
+https://global-cuisine-updated.herokuapp.com/#/
+
+# Note
+I revisited this project months after completion to restyle the layout. The CSS was stripped down and is now consistently styled using Flexbox. In the future I will continue to update the CSS and make the User Interface fully responsive. I want to give credit to my partners Anusha Tuladhar and Andrew Roellig for helping to create the initial version of the project. Here is a link to the original repository which has all of our commits. <br/>
+https://github.com/cBrownSF/global-cuisine
 
 # Intro
 Have you ever wished that all of your favorite recipes were all stored in one, safe, easy to access place? Are you ever curious about what other peoples favorite recipes are. Well the application Global Cuisine will fulfill all of your desires.
